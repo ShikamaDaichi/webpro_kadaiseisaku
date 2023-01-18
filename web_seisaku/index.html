@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+ <head>
+ <meta charset="utf-8">
+ <title>あっち向いてホイ!</title>
+ </head>
+ <body>
+  <form name="page">
+  <center>
+  <h1>あっち向いてホイ</h1>
+  </center>
+  <div>あなたはあっち向いてホイのジャンケンに勝ったよ!!!!では...</div>
+  <center>
+  <div>対戦相手</div>
+  <form name="page">
+    <p><img id="hoi_way" src="main_photo/syoubu.jpeg" width="200" height="200"></p>
+    <div>相手の向く方向を当てろ!</div>
+    <div>あっち向いて〜〜〜〜〜〜</div>
+    <label for="up">上</label><input id="up" type="radio" name="way" value="up" checked>
+    <label for="right">右</label><input id="right" type="radio" name="way" value="right">
+    <label for="down">下</label><input id="down" type="radio" name="way" value="down" >
+    <label for="left">左</label><input id="left" type="radio" name="way" value="left">
+    <p><img id="yubi_way" src="main_photo/start.png" width="200" height="200"></p>
+    <div id="battleResult"></div>
+    
+    <button type="button" class="battleBtn">勝負!</button>
+    </center>
+    <button type="button" class="resetBtn">リセット</button>
+    <link rel="stylesheet" href="styles.css">
+    <script src="hoi.js"></script>
+  </form>
+  </body>
+</html>
